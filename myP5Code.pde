@@ -5,8 +5,12 @@ void setup() {
 }
 
 //🎯Varaible Declarations Go Here
-var eyeSize = 8;
 
+var eyeSize= 40;
+   eyeSize= 20
+   var teethSize
+   teethSize= 100;
+   
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
   fill(255,255,255);
@@ -14,7 +18,7 @@ void draw(){
   background(255,255,255,200);
 
   //💡⬇️⬇️⬇️💡 Your Code For This Unit Goes Here
-  
+   
   ellipse(150, 70, 60, 120);  // left ear
   ellipse(240, 70, 60, 120);  // right ear
 
@@ -52,6 +56,8 @@ void mousePressed(){
   console.log(myText);
   
   
+  eyeSize=random(10,40)
+  eyeSize= eyeSize +1
 }
 
 //🟡Key Pressed Procedure - Runs When Keyboard Key is Pressed
